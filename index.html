@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Тестовое задание</title>
+    <meta content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" /> 
+    
+    <link rel="stylesheet" href="css/main.css" media="all"/>
+
+    <link href="favicon.ico" rel="shortcut icon"/>
+
+</head>
+
+<body>  
+
+    <!-- main start -->
+    <main>
+        <!-- tariff start -->
+        <section class="tariff">
+            <div class="tariff__container">
+                <h1 class="tariff__title title">Какой-то заголовок</h1>
+                <div class="tariff__card card">
+                    <div class="card__description">
+                        <div class="card__icon">
+                            <picture>
+                                <source srcset="img/src/card-icon.webp" type="image/webp">
+                                <img src="img/src/card-icon.png" alt="photo">
+                            </picture>
+                        </div>
+                        <div class="card__selection-panel">
+                            <span class="card__season">В месяц</span>
+                            <div class="card__switch switch">
+                                <input id="price-switcher" type="checkbox" name="price-switcher">
+                                <label for="price-switcher">Toggle</label>
+                            </div>
+                            <span class="card__season">В год</span>
+                            <span class="card__sticker">-30%</span>
+                        </div>
+                        <dl class="card__plan">
+                            <dt>Start</dt>
+                            <dd id="price-container"></dd>
+                        </dl>
+                        <p class="card__small-text">Расходы на рекламные<br> кампаний в месяц<br class="card__mobile-br"> до 30 000 ₽</p>
+                    </div>
+                    <div class="card__bottom-panel">
+                        <p class="card__text">Вы сэкономите<br class="card__mobile-br"> на рекламе 6 456 ₽<br class="card__mobile-br"> за месяц</p>
+                        <div class="card__links-col">
+                            <a href="#" class="card__button button">Оформить подписку</a>
+                            <a href="#" class="card__link">Тарифные планы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- tariff end -->
+        <!-- work start -->
+        <section class="work">
+            <div class="work__container">
+                <div class="work__content">
+                    <h2 class="work__title title">Как мы работаем</h2>
+                    <div class="work__steps steps">
+                        <div class="steps__item">
+                            <figure>
+                                <source srcset="img/src/step-img-1.webp" type="image/webp">
+                                <img src="img/src/step-img-1.png" alt="photo">
+                            </figure>
+                            <figcaption>Звонок,<br> регистрация, заказ</figcaption>
+                        </div>
+                        <div class="steps__item">
+                            <figure>
+                                <source srcset="img/src/step-img-2.webp" type="image/webp">
+                                <img src="img/src/step-img-2.png" alt="photo">
+                            </figure>
+                            <figcaption>Консультация</figcaption>
+                        </div>
+                        <div class="steps__item">
+                            <figure>
+                                <source srcset="img/src/step-img-3.webp" type="image/webp">
+                                <img src="img/src/step-img-3.png" alt="photo">
+                            </figure>
+                            <figcaption>Оплата заказа,<br> загрузка документов</figcaption>
+                        </div>
+                        <div class="steps__item">
+                            <figure>
+                                <source srcset="img/src/step-img-4.webp" type="image/webp">
+                                <img src="img/src/step-img-4.png" alt="photo">
+                            </figure>
+                            <figcaption>Проверка документов, заполнение<br> и отправка декларации</figcaption>
+                        </div>
+                        <div class="steps__item">
+                            <figure>
+                                <source srcset="img/src/step-img-5.webp" type="image/webp">
+                                <img src="img/src/step-img-5.png" alt="photo">
+                            </figure>
+                            <figcaption>Поступление денег<br> от ФНС</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- work end -->
+    </main>
+    <!-- main end -->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <!-- templates -->
+    <template id="monthly-price">
+        <div class="card__price">
+            <span>1 900 ₽</span><sup>/мес</sup>
+        </div>
+    </template>
+
+    <template id="yearly-price">
+        <div class="card__price">
+            <span>15 960 ₽</span><sup>/год</sup>
+        </div>
+        <span class="card__economy">6 840 ₽ <span>Экономия</span></span>
+    </template>
+
+</body>
+
+</html>     
